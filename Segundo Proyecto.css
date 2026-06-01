@@ -1,0 +1,89 @@
+/* Estilo general de la página */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 115%;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    background-color: #1e3a5f;
+    padding: 20px;
+}
+
+/* Navegación */
+nav {
+    background-color: #4a90e2;
+    padding: 10px;
+    display: inline-block;
+    width: 80%;
+}
+
+@media (max-width: 600px) {
+nav img {
+    max-width: 120px;
+    width: 100%;
+    height: auto;
+}
+    }
+
+/* Imagen dentro de nav */
+nav img {
+    width: 10%;
+}
+
+/* Contenido principal */
+main {
+    background-color: #ffffff;
+    font-size: 110%;
+    padding: 20px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #d9d9d9;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Elementos de lista */
+/*
+li {
+    display: inline-block;
+    width: 200px;
+    margin: 5px;
+}
+*/
+
+/* Encabezado principal */
+h1 {
+    text-align: center;
+    font-family: Georgia, "Times New Roman", serif;
+    color: #ffffff;
+}
+
+/* Párrafos */
+p {
+    line-height: 1.6;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 20px;
+}
+
+/* Solo imágenes dentro de grid */
+.grid img {
+    width: 100%;
+}
+
+/* Flexbox */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
