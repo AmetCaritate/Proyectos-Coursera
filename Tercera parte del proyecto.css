@@ -1,0 +1,57 @@
+/* Skip link */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0;
+}
+.skip-link:focus {
+  left: 10px;
+  top: 10px;
+  background: black;
+  color: white;
+  padding: 10px;
+  z-index: 1000;
+}
+
+/* NAV flex */
+.nav {
+  display: flex;
+  justify-content: space-around;
+  background: #333;
+  padding: 10px;
+}
+.nav a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+  will-change: transform;
+}
+
+/* hover interesante */
+.nav a:hover {
+  color: yellow;
+  transform: scale(1.2);
+}
+
+/* GRID obligatorio */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+/* imágenes (box model obligatorio) */
+.grid img {
+  width: 100%;
+  border: 3px solid #444;
+  padding: 5px;
+  border-radius: 15px;
+}
+
+/* nth-child */
+.grid img:nth-child(odd) {
+  border-radius: 30px;
+}
+
+.grid img:nth-child(even) {
+  border-radius: 5px;
+}
